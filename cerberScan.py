@@ -20,8 +20,7 @@ parser.add_argument('-subdomains',dest='subdomains',action = "store_true")
 parser.add_argument('-file', nargs='?', dest='file')
 parser.add_argument('-detectMid', dest='detectmid', action='store_true')
 parser.add_argument('-middleware', nargs='?', dest='middleware')
-parser.add_argument("--account", nargs = '?',dest = 'account')
-parser.add_argument("--password", nargs = '?', dest = 'password')
+
 
 
 
@@ -38,8 +37,7 @@ subdomains = args.subdomains
 proxy = args.proxy or None
 threads = args.thread or 7
 outfile = args.outfile
-account = args.account
-password = args.password
+
 
 
 from core.proxies import Proxy
